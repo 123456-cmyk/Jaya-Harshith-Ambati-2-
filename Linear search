@@ -1,0 +1,24 @@
+//C program for linear search algorithm
+#include<stdio.h>
+  
+void main()
+{
+    int a[20],i,no,s;
+    printf("Enter the number of array elements=");
+    scanf("%d",&no);
+    printf("Enter the array elements=");
+    for(i=0;i<no;++i)
+        scanf("%d",&a[i]);
+    printf("Enter element to search in the array=");
+    scanf("%d",&s);
+    for(i=0;i<no;++i)
+    {
+        if(a[i]==s)
+           break;
+    }       
+    if(i<no)
+        printf("Element is found at index or location %d",i);
+    else
+        printf("Element was not found in the array");
+  
+}
